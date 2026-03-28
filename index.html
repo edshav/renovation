@@ -26,6 +26,12 @@
       content="https://edshav.github.io/home-renovation/images/hero-kitchen.webp"
     />
     <title>Home Renovation Services in Calgary | Sharp Edge Interiors</title>
+    <link
+      rel="preload"
+      href="/images/hero-kitchen.webp"
+      as="image"
+      fetchpriority="high"
+    />
     <link rel="stylesheet" href="/src/style.css" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -107,7 +113,7 @@
         >
           <div class="z-10">
             <span
-              class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary rounded-full font-bold tracking-wide mb-6 text-lg px-6 py-1 md:py-3"
+              class="inline-flex items-center gap-2 bg-secondary-container text-on-secondary-container rounded-full font-bold tracking-wide mb-6 text-lg px-6 py-1 md:py-3"
             >
               🔥 10% OFF – Limited Time
             </span>
@@ -143,6 +149,8 @@
                 alt="Modern kitchen interior featuring light wood cabinetry, a white marble waterfall island, matching marble backsplash, and two large frosted globe pendant lights with brass hardware"
                 class="w-full h-[500px] object-cover"
                 src="/images/hero-kitchen.webp"
+                fetchpriority="high"
+                loading="eager"
               />
             </div>
           </div>
@@ -376,7 +384,7 @@
           <h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-6">
             Book Now
           </h2>
-          <p class="text-on-primary-container text-xl mb-10">
+          <p class="text-on-primary text-xl mb-10 opacity-90">
             Secure your renovation slot Before the Discount Ends. Our calendar
             fills up quickly!
           </p>
@@ -448,14 +456,18 @@
     </main>
     <!-- Footer -->
     <footer
-      class="bg-white/80 text-slate-400 py-8 border-t border-white/10 pb-28 md:pb-8"
+      class="bg-white/80 text-slate-600 py-8 border-t border-slate-200 pb-28 md:pb-8"
     >
       <div
         class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm"
       >
         <p>
           Built with 🩶 by
-          <a href="https://www.linkedin.com/in/edshav/">Eduard Shavyrko</a>
+          <a
+            href="https://www.linkedin.com/in/edshav/"
+            class="text-blue-700 hover:text-blue-800 font-medium underline underline-offset-2"
+            >Eduard Shavyrko</a
+          >
         </p>
       </div>
     </footer>
