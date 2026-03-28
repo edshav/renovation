@@ -4,18 +4,65 @@
   <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Home Renovation Services</title>
+    <meta
+      name="description"
+      content="Expert home renovation services. We specialize in flooring, drywall, painting, and tile installation across the Calgary area. Request a free estimate today!"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://edshav.github.io/home-renovation/"
+    />
+    <meta
+      property="og:title"
+      content="Home Renovation Services in Calgary | Sharp Edge Interiors"
+    />
+    <meta
+      property="og:description"
+      content="Expert home renovation services. We specialize in flooring, drywall, painting, and tile installation across the Calgary area. Request a free estimate today!"
+    />
+    <meta
+      property="og:image"
+      content="https://edshav.github.io/home-renovation/images/hero-kitchen.webp"
+    />
+    <title>Home Renovation Services in Calgary | Sharp Edge Interiors</title>
     <link rel="stylesheet" href="/src/style.css" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
+      rel="preload"
+      as="style"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap"
-      rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap"
+      media="print"
+      onload="this.media = 'all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap"
+      />
+    </noscript>
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      />
+    </noscript>
   </head>
   <body class="bg-surface text-on-surface font-body antialiased">
     <!-- Navigation -->
@@ -45,7 +92,7 @@
         >
         <a
           class="bg-secondary text-on-secondary px-6 py-2 rounded-md font-bold cta-gradient scale-95 active:scale-90 transition-transform"
-          href="tel:+15878737399"
+          href="%VITE_PHONE_HREF%"
           >Call Now</a
         >
       </div>
@@ -53,7 +100,7 @@
     <main class="pt-16">
       <!-- 1. Hero Section -->
       <section
-        class="relative min-h-[70vh] flex items-center px-6 md:px-12 py-20 overflow-hidden bg-surface-container-low"
+        class="relative min-h-[50vh] md:min-h-[70vh] flex items-center px-6 md:px-12 py-10 md:py-20 overflow-hidden bg-surface-container-low"
       >
         <div
           class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
@@ -81,7 +128,7 @@
             <div class="flex flex-col sm:flex-row gap-4">
               <a
                 class="bg-secondary text-on-secondary px-10 py-4 rounded-md font-bold text-lg cta-gradient shadow-lg scale-95 active:scale-90 transition-transform flex items-center justify-center gap-2"
-                href="tel:+15878737399"
+                href="%VITE_PHONE_HREF%"
               >
                 Call Now
                 <span class="material-symbols-outlined">call</span>
@@ -93,7 +140,7 @@
               class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white"
             >
               <img
-                alt="luxury modern kitchen renovation"
+                alt="Modern kitchen interior featuring light wood cabinetry, a white marble waterfall island, matching marble backsplash, and two large frosted globe pendant lights with brass hardware"
                 class="w-full h-[500px] object-cover"
                 src="/images/hero-kitchen.webp"
               />
@@ -102,8 +149,8 @@
         </div>
       </section>
       <!-- 2. Image Gallery -->
-      <section class="py-24 px-4 bg-surface" id="gallery">
-        <div class="max-w-7xl mx-auto mb-16 text-center">
+      <section class="py-10 md:py-24 px-4 bg-surface" id="gallery">
+        <div class="max-w-7xl mx-auto mb-8 md:mb-16 text-center">
           <h2
             class="font-headline text-4xl font-extrabold tracking-tight text-primary mb-4"
           >
@@ -118,60 +165,70 @@
         >
           <div class="aspect-[3/4] rounded-lg overflow-hidden shadow-sm">
             <img
+              alt="Walk-in shower renovation showing waterproof tile backer boards and sealed seams by Sharp Edge Interiors"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               src="/images/img_01.webp"
             />
           </div>
           <div class="aspect-[3/4] rounded-lg overflow-hidden shadow-sm">
             <img
+              alt="Mid-process custom shower tiling with large-format slate-textured porcelain tiles and leveling system"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               src="/images/img_02.webp"
             />
           </div>
           <div class="aspect-[3/4] rounded-lg overflow-hidden shadow-sm">
             <img
+              alt="Walk-in shower renovation featuring dark grey wall tiles and light grey marble herringbone floor tiling"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               src="/images/img_03.webp"
             />
           </div>
           <div class="aspect-[3/4] rounded-lg overflow-hidden shadow-sm">
             <img
+              alt="Luxury shower stall construction with charcoal stone-look tiles and marble herringbone mosaic floor"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               src="/images/img_04.webp"
             />
           </div>
           <div class="aspect-[3/4] rounded-lg overflow-hidden shadow-sm">
             <img
+              alt="Completed custom shower interior with large-format taupe stone walls and built-in recessed niche"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               src="/images/img_05.webp"
             />
           </div>
           <div class="aspect-[3/4] rounded-lg overflow-hidden shadow-sm">
             <img
+              alt="Modern minimalist shower design with light beige tiles, marble herringbone floor, and matte black fixtures"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               src="/images/img_06.webp"
             />
           </div>
           <div class="aspect-[3/4] rounded-lg overflow-hidden shadow-sm">
             <img
+              alt="Precision installation of large marble-veined porcelain wall tiles using professional laser leveling"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               src="/images/img_07.webp"
             />
           </div>
           <div class="aspect-[3/4] rounded-lg overflow-hidden shadow-sm">
             <img
+              alt="Finished polished flooring featuring large square white marble-effect porcelain tiles with grey veining"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               src="/images/img_08.webp"
             />
           </div>
           <div class="aspect-[3/4] rounded-lg overflow-hidden shadow-sm">
             <img
+              alt="Newly installed grey wood-look laminate flooring and fresh painting in a residential room renovation"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               src="/images/img_09.webp"
             />
           </div>
           <div class="aspect-[3/4] rounded-lg overflow-hidden shadow-sm">
             <img
+              alt="High-quality residential home renovation finish by Sharp Edge Interiors"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               src="/images/img_10.webp"
             />
@@ -180,11 +237,11 @@
       </section>
       <!-- 3. Services Section -->
       <section
-        class="py-24 px-6 md:px-12 bg-surface-container-low"
+        class="py-10 md:py-24 px-6 md:px-12 bg-surface-container-low"
         id="services"
       >
         <div class="max-w-7xl mx-auto">
-          <div class="mb-16">
+          <div class="mb-8 md:mb-16">
             <h2
               class="font-headline text-4xl font-extrabold tracking-tight text-primary mb-2"
             >
@@ -193,7 +250,7 @@
             <div class="h-1 w-20 bg-secondary"></div>
           </div>
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-10"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-5 md:gap-y-10"
           >
             <!-- Services Checklist Style -->
             <div class="flex flex-col">
@@ -264,14 +321,16 @@
         </div>
       </section>
       <!-- 4. Why Choose Us -->
-      <section class="py-24 px-6 md:px-12 bg-surface" id="why-us">
+      <section class="py-10 md:py-24 px-6 md:px-12 bg-surface" id="why-us">
         <div class="max-w-4xl mx-auto">
           <h2
-            class="font-headline text-4xl font-extrabold tracking-tight text-primary mb-12 text-center"
+            class="font-headline text-4xl font-extrabold tracking-tight text-primary mb-6 md:mb-12 text-center"
           >
             Why choose us
           </h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-5 md:gap-y-10"
+          >
             <div class="flex gap-4 items-center">
               <span class="material-symbols-outlined text-secondary text-3xl"
                 >check_circle</span
@@ -312,7 +371,7 @@
         </div>
       </section>
       <!-- 5. Call-to-Action Section -->
-      <section class="py-24 px-6 md:px-12 bg-primary text-on-primary">
+      <section class="py-10 md:py-24 px-6 md:px-12 bg-primary text-on-primary">
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-6">
             Book Now
@@ -324,7 +383,7 @@
           <div class="flex flex-col sm:flex-row justify-center gap-6">
             <a
               class="bg-secondary text-on-secondary px-12 py-5 rounded-md font-bold text-xl cta-gradient shadow-xl flex items-center justify-center gap-3 active:scale-95 transition-all"
-              href="tel:+15878737399"
+              href="%VITE_PHONE_HREF%"
             >
               <span
                 class="material-symbols-outlined"
@@ -338,16 +397,18 @@
       </section>
       <!-- 6. Contact Section -->
       <section
-        class="py-20 px-6 bg-surface-container-high border-t border-outline-variant"
+        class="py-10 md:py-20 px-6 bg-surface-container-high border-t border-outline-variant"
       >
         <div
-          class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 text-center md:text-left"
+          class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 text-center md:text-left"
         >
           <div>
-            <h3 class="font-headline text-2xl font-bold mb-6 text-primary">
+            <h3
+              class="font-headline text-2xl font-bold mb-4 md:mb-6 text-primary"
+            >
               Get In Touch
             </h3>
-            <div class="space-y-6">
+            <div class="space-y-4 md:space-y-6">
               <div
                 class="flex items-center justify-center md:justify-start gap-4"
               >
@@ -356,8 +417,8 @@
                 >
                 <a
                   class="text-xl font-bold text-on-surface hover:text-secondary transition-colors Manrope"
-                  href="tel:+15878737399"
-                  >587-873-7399</a
+                  href="%VITE_PHONE_HREF%"
+                  >%VITE_PHONE_LABEL%</a
                 >
               </div>
               <div
@@ -368,8 +429,8 @@
                 >
                 <a
                   class="text-xl font-bold text-on-surface hover:text-secondary transition-colors Manrope"
-                  href="mailto:v.v@sharpedgeexterior.com"
-                  >v.v@sharpedgeexterior.com</a
+                  href="%VITE_EMAIL_HREF%"
+                  >%VITE_EMAIL_LABEL%</a
                 >
               </div>
             </div>
@@ -379,8 +440,7 @@
               Home Renovation
             </div>
             <p class="text-on-surface-variant">
-              Excellence in every detail. Licensed &amp; Insured residential
-              remodeling specialists.
+              Reliable services. Clean, fast, high-quality work
             </p>
           </div>
         </div>
@@ -423,7 +483,7 @@
       </a>
       <a
         class="flex flex-col items-center justify-center bg-gradient-to-r from-secondary to-secondary-container text-white rounded-xl px-4 py-2 my-1 active:scale-90 transition-transform shadow-lg"
-        href="tel:+15878737399"
+        href="%VITE_PHONE_HREF%"
       >
         <span
           class="material-symbols-outlined"
