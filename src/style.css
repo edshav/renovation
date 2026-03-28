@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+section {
+  scroll-margin-top: 60px;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
     "FILL" 0,
